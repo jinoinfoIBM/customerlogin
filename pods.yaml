@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: custlogin-api
+spec:
+  selector:
+    matchLabels:
+      custapilabel: custlogin-api
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        custapilabel: custlogin-api
+    spec:
+      containers:
+      - name: custlogin-api
+        image: docker.io/jinoinfo/kube-repository:customerlogin

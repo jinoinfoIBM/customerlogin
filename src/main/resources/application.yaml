@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: customerlogin
+
+customer:
+  bank:
+    base:
+      url: http://custbank-apiservice:8080  
+server:
+  address: 0.0.0.0
